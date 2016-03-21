@@ -31,38 +31,41 @@ var aMan = new FacelessMan(`Jaqen H'ghar`);
 
 
 
-class Lion extends Cat {
- constructor(size) {
+class Lion extends Cat{
+  constructor() {
     super();
    this.size = 'BIG';
- }
+  }
 }
+
+
 
 
 class KeepSecret {
- constructor(secret) {
-   this.squeal = function () {
-     return secret;
-   }
+  constructor(something) {
+  this.squeal = function() {
+    return something;
+  }
  }
 }
+
 
 
 
 
 class Key {
-contructor() {
+  constuctor(){
 
   }
 }
 
 class Safe {
- constructor(secret, key) {
-   this.unlock = function (lockpick) {
-     if (lockpick == key) {
+  constructor(secret, Key){
+   this.unlock = function(open) {
+     if (open == Key) {
        return secret;
      }
-     return undefined;
    }
- }
+   return undefined;
+  }
 }
